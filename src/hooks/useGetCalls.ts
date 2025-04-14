@@ -31,8 +31,9 @@ const useGetCalls = () => {
       } finally {
         setIsLoading(false);
       }
-      loadCalls();
     };
+
+    loadCalls();
   }, [client, user?.id]);
 
   const now = new Date();
